@@ -8,12 +8,13 @@ This project implements various machine learning models to predict ductility pro
 
 ## Repository Structure
 
+<pre>
 ductility_xgb_model/
-├── README.md # Project documentation
-├── model_xgb.ipynb # XGBoost model implementation
-├── code_model_comparison.ipynb # Model performance comparisons
-└── data/ # Dataset files (if applicable)
-
+├── README.md                      # Project documentation
+├── model_xgb.ipynb                # XGBoost model implementation
+├── code_model_comparison.ipynb   # Model performance comparisons
+└── data/                          # Dataset files (if applicable)
+</pre>
 
 ## Features
 
@@ -72,37 +73,33 @@ Target Variable: Ductility measurements (elongation %, reduction in area)
 | SVR               | 0.85     | 3.21 | 2.45 | 67s           |
 | Linear Regression | 0.72     | 4.12 | 3.18 | 2s            |
 
-##Key Findings
-- **XGBoost outperforms other models with highest R² score
+## 🔑 Key Findings
 
-- **Carbon content and processing temperature are most important features
+- XGBoost outperforms other models in accuracy and generalization  
+- Carbon content and processing temperature are the most influential features  
+- Hyperparameter tuning improved performance by **8–12%**
 
-- **Model shows good generalization across different alloy families
+## 🛠️ Hyperparameter Optimization
 
-- **Hyperparameter tuning improved performance by 8-12%
+Includes both **Grid Search** and **Random Search** for:
 
-##Hyperparameter Optimization
-- **The project includes grid search and random search for:
+- `n_estimators`
+- `max_depth`
+- `learning_rate`
+- `subsample`
+- `colsample_bytree`
 
-- **n_estimators: Number of boosting rounds
+## 📊 Visualization
 
-- **max_depth: Maximum tree depth
+- Feature importance plots  
+- Learning curves  
+- Residual plots  
+- Prediction vs actual scatter plots  
+- Cross-validation score plots
 
-- **learning_rate: Step size shrinkage
+## 🤝 Contributing
 
-- **subsample: Fraction of samples for training
-
-- **colsample_bytree: Fraction of features for training
-
-##Visualization
-- **The notebooks include:
-
-- **Feature importance plots
-
-- **Learning curves
-
-- **Residual plots
-
-- **Prediction vs actual scatter plots
-
-- **Cross-validation scores
+1. Fork the repository  
+2. Create your feature branch:  
+   ```bash
+   git checkout -b feature/feature-name
