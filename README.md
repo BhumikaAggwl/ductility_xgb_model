@@ -54,7 +54,7 @@ pip install -r requirements.txt
 pip install pandas numpy scikit-learn xgboost matplotlib seaborn jupyter
 ```
 
-Dataset
+##Dataset
 The model works with alloy composition data including:
 
 Chemical Composition: Percentages of different elements (Fe, Cr, Ni, C, etc.)
@@ -72,37 +72,37 @@ Target Variable: Ductility measurements (elongation %, reduction in area)
 | SVR               | 0.85     | 3.21 | 2.45 | 67s           |
 | Linear Regression | 0.72     | 4.12 | 3.18 | 2s            |
 
-Key Findings
-XGBoost outperforms other models with highest R² score
+##Key Findings
+-**XGBoost outperforms other models with highest R² score
 
-Carbon content and processing temperature are most important features
+-**Carbon content and processing temperature are most important features
 
-Model shows good generalization across different alloy families
+-**Model shows good generalization across different alloy families
 
-Hyperparameter tuning improved performance by 8-12%
+-**Hyperparameter tuning improved performance by 8-12%
 
-Hyperparameter Optimization
-The project includes grid search and random search for:
+##Hyperparameter Optimization
+-**The project includes grid search and random search for:
 
-n_estimators: Number of boosting rounds
+-**n_estimators: Number of boosting rounds
 
-max_depth: Maximum tree depth
+-**max_depth: Maximum tree depth
 
-learning_rate: Step size shrinkage
+-**learning_rate: Step size shrinkage
 
-subsample: Fraction of samples for training
+-**subsample: Fraction of samples for training
 
-colsample_bytree: Fraction of features for training
+-**colsample_bytree: Fraction of features for training
 
-Visualization
-The notebooks include:
+##Visualization
+-**The notebooks include:
 
-Feature importance plots
+-**Feature importance plots
 
-Learning curves
+-**Learning curves
 
-Residual plots
+-**Residual plots
 
-Prediction vs actual scatter plots
+-**Prediction vs actual scatter plots
 
-Cross-validation scores
+-**Cross-validation scores
